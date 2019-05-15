@@ -1,0 +1,54 @@
+.projects {
+  text-align: center;
+}
+.portfolio-section {
+  margin: 10px auto;
+  max-width: 990px;
+  height: 800px;
+  padding: 15px 0;
+  -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+	background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+}
+
+.portfolio-section--header {
+  color: #faf9f9;
+  /*font-family: $roboto-medium;*/
+  margin: 0 15px 15px;
+  text-align: center;
+}
+.projects-item{
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(https://res.cloudinary.com/dmglopmul/image/upload/v1557763525/projectPhotos/dossier/avengers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  color:#faf9f9;
+  display: inline-block;
+  margin: 0 15px 15px;
+  overflow: hidden;
+  transition: all .3s;
+  text-decoration: none;
+  width: 600px;
+  height: 600px;
+
+}
+.projects-item:hover{
+  /*background-color: #737373; */
+}
+.card-container {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+  padding: 10%;
+  font-size:1.8rem;
+  
+
+}
