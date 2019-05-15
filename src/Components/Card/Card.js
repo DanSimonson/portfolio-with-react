@@ -8,17 +8,17 @@ const Card = ({ property }) => {
       <img src={picture} alt={name} />
       <div className="details">
         {/**{index+1} */}
-        <span className="index"></span>
+        {/*<span className="index"></span>*/}
         <p className="location">
           {name}
         </p>
         <a className='aTag' href={url} target="_blank">Github Repository</a>
         <a className='aTag' href={link} target="_blank">Demo</a>
-        {/*<ul style={{listStyleType: 'none'}} className="features">
+        <ul style={{listStyleType: 'none'}} className="features">
                     <li className="icon-bed">{bedrooms} <span>bedrooms</span></li>
                     <li className="icon-bath">{bathrooms} <span>bathrooms</span></li>
                     <li className="icon-car">{carSpaces} <span>parking spots</span></li>
-                </ul>*/}
+                </ul>
       </div>
     </div>
   )

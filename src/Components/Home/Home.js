@@ -13,8 +13,8 @@ const Home = ({ property }) => {
         <TransitionGroup className="card-container">
         <CSSTransition
           key={property._id}
-          timeout={4500}
-          classNames="slide"
+          timeout={300}
+          classNames="fade"
         >
           <Card property={property} />
         </CSSTransition>

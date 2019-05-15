@@ -108,7 +108,7 @@ export class Portfolio extends Component {
           <CSSTransition
             in={appearHome}
             appear={true}
-            timeout={1000}
+            timeout={300}
             classNames="fade">
             <Home property={property} />
           </CSSTransition>
@@ -116,6 +116,7 @@ export class Portfolio extends Component {
         <div className='animWrap'>
         <button onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
           <button onClick={() => this.nextProperty()} disabled={property.index === data.properties.length - 1}>Next</button>
+          {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}
           
         </div>
 
