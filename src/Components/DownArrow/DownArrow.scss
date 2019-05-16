@@ -25,7 +25,8 @@ $peakopacity: 1;
 }
 
 .Portfolio-down-arrow {
-  position: relative;
+  /*position: relative;*/
+  cursor: pointer;
   position: absolute;
   left:50%;
   bottom:5%;

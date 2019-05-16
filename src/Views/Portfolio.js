@@ -4,9 +4,11 @@ import './Portfolio.scss'
 import Projects from '../Components/Projects/Projects'
 import DownArrow from '../Components/DownArrow/DownArrow.js';
 import Home from '../Components/Home/Home';
+import Footer from '../Components/Footer/Footer'
 import { Link as ScrollLink, Element as ScrollElement } from 'react-scroll';
 import Typist from 'react-typist';
 import Card from '../Components/Card/Card';
+import Items from '../Components/Items/Items'
 import data from '../Data/Data'
 import { CSSTransition } from "react-transition-group"
 
@@ -67,6 +69,7 @@ export class Portfolio extends Component {
   render() {
     const { appearHome, property } = this.state
     return (
+     
       <div className='portfolio'>
         <header className="portfolio-header"
           style={{
@@ -116,12 +119,14 @@ export class Portfolio extends Component {
         <div className='animWrap'>
         <button className='btnBlue' onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
           <button className='btnBlue' onClick={() => this.nextProperty()} disabled={property.index === data.properties.length - 1}>Next</button>
-          {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}
-          
+          {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}          
         </div>
-
-
+        <Items/>
+        {/*<Footer/>*/}
+        
       </div>
+      
+      
     )
   }
 }

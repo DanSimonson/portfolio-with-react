@@ -85,6 +85,7 @@ section {
 }
 section h1{
   font-size:2rem;
+
   color: #faf9f9;
   -webkit-text-stroke: 1px black;
   text-shadow:
@@ -98,7 +99,6 @@ section h1{
 }
 
 /* Card */
-
 .card-container {
   position: relative;
   /*max-width: 226px;*/
@@ -170,13 +170,14 @@ section h1{
 }
 .aTag:hover,
 .aTag:active{
-  color: #cb4154;
+  color: #ADD8E6;/*#cb4154;*/
 }
 .pTag{ 
   margin:0;
   font-size:2rem; 
   text-decoration: none;
-  color: #cb4154;
+
+  color: #faf9f9;/*#ADD8E6;#cb4154;*/
   -webkit-text-stroke: 1px black;
   text-shadow:
   3px 3px 0 #000,
@@ -184,6 +185,7 @@ section h1{
  1px -1px 0 #000,
  -1px 1px 0 #000,
   1px 1px 0 #000;
+ 
 }
 .details{
   display: flex;
@@ -193,6 +195,37 @@ section h1{
   flex-wrap: wrap
   /*border:5px solid orangered;*/
 }
+
+/** Footer*/
+/*footer{
+  
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /*color: white;
+  -webkit-text-stroke: 1px black;*/
+  /*font-size: 1rem;
+  font-family: 'Peralta', cursive;
+  font-weight: 200;
+  margin-top: 5rem;
+  color: #faf9f9;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  a{
+    text-decoration:none;
+    color: #faf9f9;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+  }
+  a:hover{
+    color: #cb4154;
+  }
+}*/
+/*end footer*/
+
+/*items*/
+
 
 /*media queries*/
 /**everything under*/
@@ -204,8 +237,11 @@ section h1{
     font-size: 1.9rem;
   } 
   .pTag{
-    font-size:1.7rem;
-   
+    font-size:1.7rem;   
+  }
+  footer{
+    flex-direction: column;
+    line-height: 10%;
   }
 }
 /*.card .price {
