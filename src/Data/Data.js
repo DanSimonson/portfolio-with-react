@@ -52,19 +52,19 @@ const data = {
       "bathrooms": 2,
       "carSpaces": 0*/
     },
-    {
+    /*{
         "_id": "593e92973d4d15eedb129aee",
         "index": 3,
         "price": 648223,
         "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property04.jpg",
-        /*"city": "Ivanhoe",
+        "city": "Ivanhoe",
         "address": "854 Varanda Place",
         "latitude": -33.940396,
         "longitude": 151.2469,
         "bedrooms": 3,
         "bathrooms": 2,
-        "carSpaces": 0*/
-    },
+        "carSpaces": 0
+},*/
     /*{
         "_id": "593e929728b7f8543b7907e1",
         "index": 4,

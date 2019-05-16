@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Portfolio from './Views/Portfolio';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 

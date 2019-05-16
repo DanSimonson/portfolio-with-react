@@ -114,8 +114,8 @@ export class Portfolio extends Component {
           </CSSTransition>
         </ScrollElement>
         <div className='animWrap'>
-        <button onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
-          <button onClick={() => this.nextProperty()} disabled={property.index === data.properties.length - 1}>Next</button>
+        <button className='btnBlue' onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
+          <button className='btnBlue' onClick={() => this.nextProperty()} disabled={property.index === data.properties.length - 1}>Next</button>
           {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}
           
         </div>
