@@ -7,9 +7,9 @@ const Card = ({ property }) => {
     <div id={`card-${index}`} className="card">
       <img src={picture} alt={name} />
       <div className="details">
-      <p className="pTag"><span>{name}</span></p>
-        <a className="fa fa-github aTag"href={url} target="_blank" >Github Repository</a>
-        <a className="fa fa-desktop aTag" href={link} target="_blank">Demo</a>
+      <p className="pTag">{name}</p>
+        <a className="fa fa-github aTag"href={url} target="_blank" >  Github Repository</a>
+        <a className="fa fa-desktop aTag" href={link} target="_blank">   Demo</a>
         {/**{index+1} */}
         {/*<span className="index"></span>
         <p className="location">

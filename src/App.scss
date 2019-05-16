@@ -98,15 +98,16 @@ section h1{
 }
 
 /* Card */
+
 .card-container {
   position: relative;
-  max-width: 226px;
+  /*max-width: 226px;*/
   margin: 0 auto;
   /*border:5px solid black;*/
 }
 
 .card {
-  /*border: 3px #f3f3f3 solid;*/
+  /*border: 3px #f3f3f3 solid;*/ 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   transition: all 0.3s linear;
   cursor: pointer;
@@ -123,7 +124,7 @@ section h1{
     /*background: #005AA7;  */
     background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 32px;
+    font-size: 2.5rem;
     color: white;             
     margin-left:5px;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -170,7 +171,6 @@ section h1{
 .aTag:hover,
 .aTag:active{
   color: #cb4154;
-
 }
 .pTag{ 
   margin:0;
@@ -184,14 +184,29 @@ section h1{
  1px -1px 0 #000,
  -1px 1px 0 #000,
   1px 1px 0 #000;
-
 }
 .details{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap
   /*border:5px solid orangered;*/
+}
+
+/*media queries*/
+/**everything under*/
+@media (max-width: 767px) {
+  img{
+    width: 250px;
+  } 
+  .card{
+    font-size: 1.9rem;
+  } 
+  .pTag{
+    font-size:1.7rem;
+   
+  }
 }
 /*.card .price {
   margin: 0;
