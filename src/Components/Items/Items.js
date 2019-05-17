@@ -30,7 +30,7 @@ function Items() {
           animateIn='rollIn'>
           <div className="grid-item b">
             <span><i class="fa fa-briefcase" aria-hidden="true"></i> Skills</span>
-            <p>I enjoy bringing ideas to life in the browser. I am a full stack developer who is well versed in JavaScript, React, Vue, CSS5 and their accompanying ecosystems.</p>
+            <p>I enjoy bringing ideas to life in the browser. I am a full stack developer who is well versed in JavaScript, React, Vue, CSS3 and their accompanying ecosystems.</p>
           </div>
         </ScrollAnimation>
         <ScrollAnimation duration={3}
