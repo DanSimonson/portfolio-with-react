@@ -119,10 +119,11 @@ export class Portfolio extends Component {
         <div className='animWrap'>
         <button className='btnBlue' onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
           <button className='btnBlue' onClick={() => this.nextProperty()} disabled={property.index === data.properties.length - 1}>Next</button>
-          {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}          
-        </div>
+          {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}        
+        </div>        
+        {/*<div className='spacer'></div>*/}
         <Items/>
-        {/*<Footer/>*/}
+       
         
       </div>
       

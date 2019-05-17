@@ -38,7 +38,7 @@ const data = {
     {
       "_id": "593e929773c71925e5d7c11c",
       "index": 2,
-      "name": "Shining Nature Landscape",
+      "name": "Shining Nature",
       "link": "https://brave-mccarthy-f6fbb2.netlify.com",
       "url": "https://github.com/DanSimonson/shining",
       "picture": 'https://res.cloudinary.com/dmglopmul/image/upload/v1557804560/projectPhotos/dossier/waterfall.jpg',

@@ -35,9 +35,16 @@
 	display:inline-block;
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
+}
+.footer-basic-centered .footer-links a:hover{
+	display:inline-block;
+	text-decoration: none;
+	color: #999;
+	cursor: pointer;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* media queries */
 @media (max-width: 767px) {
   .footer-basic-centered{
     margin-top:400px;

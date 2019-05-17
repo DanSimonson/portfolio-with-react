@@ -9,21 +9,7 @@ const Card = ({ property }) => {
       <div className="details">
       <p className="pTag">{name}</p>
         <a className="fa fa-github aTag"href={url} target="_blank" >  Github Repository</a>
-        <a className="fa fa-desktop aTag" href={link} target="_blank">   Demo</a>
-        {/**{index+1} */}
-        {/*<span className="index"></span>
-        <p className="location">
-          {name}
-        </p>
-        <a className='aTag' href={url} target="_blank">Github Repository</a>
-        <a className='aTag' href={link} target="_blank">Demo</a>*/}
-        {/*<ul style={{listStyleType: 'none'}} className="features">
-                    <li className="fa fa-buysellads pTag"> <span>Avenger Application</span></li>
-                    <li className="fa fa-github aTag"> <span>Github Repository</span></li>
-                    <li> <span></span></li>
-                    <li className="fa fa-desktop aTag"><span>Demo</span></li>
-      </ul>*/}
-        {/**{bathrooms}, {bedrooms}, {carSpaces}  */}
+        <a className="fa fa-desktop aTag" href={link} target="_blank">   Demo</a>        
       </div>
     </div>
   )

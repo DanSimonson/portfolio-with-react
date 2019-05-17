@@ -42,7 +42,6 @@
     transition: opacity 300ms linear 100ms, transform 300ms ease-in-out 100ms;
 }
 
-
 slide exit 
 .slide-exit {
     opacity: 1;
@@ -85,7 +84,6 @@ section {
 }
 section h1{
   font-size:2rem;
-
   color: #faf9f9;
   -webkit-text-stroke: 1px black;
   text-shadow:
@@ -137,7 +135,6 @@ section h1{
   
 }
 .card img {
-  /*max-width: calc(100%);*/
   margin: 0 auto;
   display: block;
   /*border: 5px solid yellow;*/
@@ -170,14 +167,14 @@ section h1{
 }
 .aTag:hover,
 .aTag:active{
-  color: #ADD8E6;/*#cb4154;*/
+  color: #cb4154;/*#ADD8E6;*/
 }
 .pTag{ 
   margin:0;
   font-size:2rem; 
   text-decoration: none;
 
-  color: #faf9f9;/*#ADD8E6;#cb4154;*/
+  color: #ee4035  ;/*#cb4154;*/
   -webkit-text-stroke: 1px black;
   text-shadow:
   3px 3px 0 #000,
