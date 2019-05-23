@@ -55,7 +55,7 @@ const data = {
         {
             "_id": "593e92973d4d15eedb129aee",
             "index": 3,
-            "name": "React Hangman Game",
+            "name": "Hangman Game",
             "link": "https://hardcore-goldstine-f16387.netlify.com/",
             "url": "https://github.com/DanSimonson/react-hangman",
             "picture": 'https://res.cloudinary.com/dmglopmul/image/upload/v1558633317/projectPhotos/dossier/gallows.png',
