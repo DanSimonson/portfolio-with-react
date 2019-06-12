@@ -67,10 +67,15 @@ const data = {
             "bathrooms": 2,
             "carSpaces": 0*/
         },
-        /*{
-            "_id": "593e929728b7f8543b7907e1",
+        { 
+            "_id": "593e92975996a6263d146444",
             "index": 4,
-            "price": 771826,
+            "name": "mariposaweb-shop",
+            "link": "https://agile-oasis-31054.herokuapp.com/",
+            "url": "https://github.com/DanSimonson/cart",
+            "picture": 'https://res.cloudinary.com/dmglopmul/image/upload/v1560315041/projectPhotos/dossier/heroimage1.jpg',
+            
+            /*"price": 771826,
             "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property05.jpg",
             "city": "Lydia",
             "address": "857 Rockaway Parkway",
@@ -78,9 +83,9 @@ const data = {
             "longitude": 151.2503,
             "bedrooms": 2,
             "bathrooms": 1,
-            "carSpaces": 1
+            "carSpaces": 1*/
         },
-        {
+        /*{
             "_id": "593e92975996a6263d146444",
             "index": 5,
             "price": 686238,
