@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
-import butterfly from '../assets/butterfly.jpg'
-import './Portfolio.scss'
-import Projects from '../Components/Projects/Projects'
-import DownArrow from '../Components/DownArrow/DownArrow.js';
-import Home from '../Components/Home/Home';
-import Footer from '../Components/Footer/Footer'
-import { Link as ScrollLink, Element as ScrollElement } from 'react-scroll';
-import Typist from 'react-typist';
-import Card from '../Components/Card/Card';
-import Items from '../Components/Items/Items'
-import data from '../Data/Data'
-import { CSSTransition } from "react-transition-group"
+import React, { Component } from "react";
+import butterfly from "../assets/butterfly.jpg";
+import "./Portfolio.scss";
+import Projects from "../Components/Projects/Projects";
+import DownArrow from "../Components/DownArrow/DownArrow.js";
+import Home from "../Components/Home/Home";
+import Footer from "../Components/Footer/Footer";
+import { Link as ScrollLink, Element as ScrollElement } from "react-scroll";
+import Typist from "react-typist";
+import Card from "../Components/Card/Card";
+import Items from "../Components/Items/Items";
+import data from "../Data/Data";
+import { CSSTransition } from "react-transition-group";
 
 export class Portfolio extends Component {
   constructor(props) {
@@ -18,39 +18,39 @@ export class Portfolio extends Component {
     this.state = {
       typing: false,
       appearHome: true,
-      property: data.properties[0]
+      property: data.properties[0],
     };
   }
 
   toggleAppear = () => {
     this.setState({
-      appearHome: !this.state.appearHome
-    })
-  }
+      appearHome: !this.state.appearHome,
+    });
+  };
 
   nextProperty = () => {
     const newIndex = this.state.property.index + 1;
     this.setState({
-      property: data.properties[newIndex]
-    })
-  }
+      property: data.properties[newIndex],
+    });
+  };
 
   prevProperty = () => {
     const newIndex = this.state.property.index - 1;
     this.setState({
-      property: data.properties[newIndex]
-    })
-  }
+      property: data.properties[newIndex],
+    });
+  };
 
   onDone = () => {
     this.setState({ typing: false }, () => {
       this.setState({ typing: true });
     });
-  }
+  };
 
   startInfo = () => {
     this.setState({ typing: true });
-  }
+  };
   renderTypist = () => {
     if (this.state.typing) {
       return (
@@ -65,17 +65,17 @@ export class Portfolio extends Component {
         </Typist>
       );
     }
-  }
+  };
   render() {
-    const { appearHome, property } = this.state
+    const { appearHome, property } = this.state;
     return (
-     
-      <div className='portfolio'>
-        <header className="portfolio-header"
+      <div className="portfolio">
+        <header
+          className="portfolio-header"
           style={{
             backgroundImage: `
             linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${butterfly})
-          `
+          `,
           }}
         >
           <a href="https://github.com/DanSimonson/" target="_blank">
@@ -84,7 +84,10 @@ export class Portfolio extends Component {
           <a href="https://www.facebook.com/mariposaweb.net/" target="_blank">
             <i className="fa fa-facebook-official portfolio-header--icon" />
           </a>
-          <a href="https://www.linkedin.com/in/dansimonsonmariposaweb/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/dansimonsonmariposaweb/"
+            target="_blank"
+          >
             <i className="fa fa-linkedin-square portfolio-header--icon" />
           </a>
           <a href="https://twitter.com/simonsondan?lang=en" target="_blank">
@@ -112,24 +115,33 @@ export class Portfolio extends Component {
             in={appearHome}
             appear={true}
             timeout={300}
-            classNames="fade">
+            classNames="fade"
+          >
             <Home property={property} />
           </CSSTransition>
         </ScrollElement>
-        <div className='animWrap'>
-        <button className='btnBlue' onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
-          <button className='btnBlue' onClick={() => this.nextProperty()} disabled={property.index === data.properties.length - 1}>Next</button>
-          {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}        
-        </div>        
+        <div className="animWrap">
+          <button
+            className="btnBlue"
+            onClick={() => this.prevProperty()}
+            disabled={property.index === 0}
+          >
+            Prev
+          </button>
+          <button
+            className="btnBlue"
+            onClick={() => this.nextProperty()}
+            disabled={property.index === data.properties.length - 1}
+          >
+            Next
+          </button>
+          {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}
+        </div>
         {/*<div className='spacer'></div>*/}
-        <Items/>
-       
-        
+        <Items />
       </div>
-      
-      
-    )
+    );
   }
 }
 
-export default Portfolio
+export default Portfolio;

@@ -1,13 +1,14 @@
 const data = {
-    "properties": [
-        {
-            "_id": "593e9297e17df20c4a237d42",
-            "index": 0,
-            "name": "Avenger Application",
-            "url": "https://github.com/DanSimonson/dossiers",
-            "link": "https://tender-shockley-0f4de4.netlify.com/",
-            "picture": 'https://res.cloudinary.com/dmglopmul/image/upload/v1557803485/projectPhotos/dossier/avengers.jpg',
-            /*"text": "Avengers App",
+  properties: [
+    {
+      _id: "593e9297e17df20c4a237d42",
+      index: 0,
+      name: "Avenger Application",
+      url: "https://github.com/DanSimonson/dossiers",
+      link: "https://tender-shockley-0f4de4.netlify.com/",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1557803485/projectPhotos/dossier/avengers.jpg",
+      /*"text": "Avengers App",
             "price": 937180,
             "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property01.jpg",
             "city": "Singer",
@@ -17,15 +18,16 @@ const data = {
             "bedrooms": 2,
             "bathrooms": 2,
             "carSpaces": 2*/
-        },
-        {
-            "_id": "593e9297ec4cca9c56bf61af",
-            "index": 1,
-            "name": "Wysiwyg Keeper",
-            "link": "https://romantic-agnesi-f35b5d.netlify.com/",
-            "url": "https://github.com/DanSimonson/wysiwyg",
-            "picture": 'https://res.cloudinary.com/dmglopmul/image/upload/v1557804538/projectPhotos/dossier/docs.jpg',
-            /*"price": 703725,
+    },
+    {
+      _id: "593e9297ec4cca9c56bf61af",
+      index: 1,
+      name: "Wysiwyg Keeper",
+      link: "https://romantic-agnesi-f35b5d.netlify.com/",
+      url: "https://github.com/DanSimonson/wysiwyg",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1557804538/projectPhotos/dossier/docs.jpg",
+      /*"price": 703725,
             "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property02.jpg",
             "city": "Machias",
             "address": "255 Raleigh Place",
@@ -34,15 +36,16 @@ const data = {
             "bedrooms": 2,
             "bathrooms": 1,
             "carSpaces": 0*/
-        },
-        {
-            "_id": "593e929773c71925e5d7c11c",
-            "index": 2,
-            "name": "Shining Nature",
-            "link": "https://brave-mccarthy-f6fbb2.netlify.com",
-            "url": "https://github.com/DanSimonson/shining",
-            "picture": 'https://res.cloudinary.com/dmglopmul/image/upload/v1557804560/projectPhotos/dossier/waterfall.jpg',
-            /*"price": 837111,
+    },
+    {
+      _id: "593e929773c71925e5d7c11c",
+      index: 2,
+      name: "Shining Nature",
+      link: "https://brave-mccarthy-f6fbb2.netlify.com",
+      url: "https://github.com/DanSimonson/shining",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1557804560/projectPhotos/dossier/waterfall.jpg",
+      /*"price": 837111,
             "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property03.jpg",
             "city": "Bend",
             "address": "580 Amber Street",
@@ -51,31 +54,33 @@ const data = {
             "bedrooms": 3,
             "bathrooms": 2,
             "carSpaces": 0*/
-        },
-        {
-            "_id": "593e92973d4d15eedb129aee",
-            "index": 3,
-            "name": "Hangman Game",
-            "link": "https://hardcore-goldstine-f16387.netlify.com/",
-            "url": "https://github.com/DanSimonson/react-hangman",
-            "picture": 'https://res.cloudinary.com/dmglopmul/image/upload/v1558633317/projectPhotos/dossier/gallows.png',
-            /*"city": "Ivanhoe",
+    },
+    {
+      _id: "593e92973d4d15eedb129aee",
+      index: 3,
+      name: "Hangman Game",
+      link: "https://hardcore-goldstine-f16387.netlify.com/",
+      url: "https://github.com/DanSimonson/react-hangman",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1558633317/projectPhotos/dossier/gallows.png",
+      /*"city": "Ivanhoe",
             "address": "854 Varanda Place",
             "latitude": -33.940396,
             "longitude": 151.2469,
             "bedrooms": 3,
             "bathrooms": 2,
             "carSpaces": 0*/
-        },
-        { 
-            "_id": "593e92975996a6263d146444",
-            "index": 4,
-            "name": "mariposaweb-shop",
-            "link": "https://agile-oasis-31054.herokuapp.com/",
-            "url": "https://github.com/DanSimonson/cart",
-            "picture": 'https://res.cloudinary.com/dmglopmul/image/upload/v1560315041/projectPhotos/dossier/heroimage1.jpg',
-            
-            /*"price": 771826,
+    },
+    {
+      _id: "593e92975996a6263d146444",
+      index: 4,
+      name: "mariposaweb-shop",
+      link: "https://agile-oasis-31054.herokuapp.com/",
+      url: "https://github.com/DanSimonson/cart",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1560315041/projectPhotos/dossier/heroimage1.jpg",
+
+      /*"price": 771826,
             "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property05.jpg",
             "city": "Lydia",
             "address": "857 Rockaway Parkway",
@@ -84,11 +89,16 @@ const data = {
             "bedrooms": 2,
             "bathrooms": 1,
             "carSpaces": 1*/
-        },
-        /*{
-            "_id": "593e92975996a6263d146444",
-            "index": 5,
-            "price": 686238,
+    },
+    {
+      _id: "593e92975996a6263d146444",
+      index: 5,
+      name: "customer-list",
+      link: "https://cocky-fermi-ea251a.netlify.com/",
+      url: "https://github.com/DanSimonson/customer-list",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1586221835/projectPhotos/dossier/customers.jpg",
+      /*"price": 686238,
             "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property01.jpg",
             "city": "Rosedale",
             "address": "543 Harman Street",
@@ -96,9 +106,9 @@ const data = {
             "longitude": 151.25046,
             "bedrooms": 2,
             "bathrooms": 1,
-            "carSpaces": 1
-        },
-        {
+            "carSpaces": 1 */
+    },
+    /*{
             "_id": "593e9297a13e246da5ba0884",
             "index": 6,
             "price": 595377,
@@ -410,7 +420,7 @@ const data = {
             "bathrooms": 1,
             "carSpaces": 1
         }*/
-    ]
-}
+  ],
+};
 
 export default data;
