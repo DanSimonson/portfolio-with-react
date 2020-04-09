@@ -5,39 +5,35 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }*/
 
-.wrapper{
+.wrapper {
   /*border: 5px solid brown;*/
   position: relative;
   width: 100vw;
   height: 300px;
-  
+  margin-bottom: 200px;
 }
 .about,
-.container{
-  position:absolute;
+.container {
+  position: absolute;
 }
-.about{ 
+.about {
   /*border: 5px solid green;*/
-  margin-top:1rem;
-  height: 300px;
+  margin-top: 1rem;
+  height: 500px; /*300px;*/
   width: 100%;
   top: 0;
-  left:0;
+  left: 0;
   background-image: url(../../assets/butterfly2.jpg);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.8); 
-   color: #faf9f9;/*#ADD8E6;#cb4154;*/
-   /*-webkit-text-stroke: 1px black;*/
-   text-shadow:
-   3px 3px 0 #000,
- -1px -1px 0 #000,  
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-   1px 1px 0 #000;
-   font-size:1.5rem;
-   line-height:.6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.8);
+  color: #faf9f9; /*#ADD8E6;#cb4154;*/
+  /*-webkit-text-stroke: 1px black;*/
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 1.5rem;
+  line-height: 0.6;
 }
 
 .container {
@@ -55,33 +51,31 @@
   .grid-item {
     /*border:5px solid green;*/
     box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.8);
-    background-color: #f5f6f7;/*#525d68;/*#faf0e6;/*lightgreen;*/
+    background-color: #f5f6f7; /*#525d68;/*#faf0e6;/*lightgreen;*/
     padding: 1em;
-    color:  #525d68;/*#06BC9B;*/
+    color: #525d68; /*#06BC9B;*/
     -webkit-text-stroke: 1px black;
-    font-size:1rem;
-    height:100%;
+    font-size: 1rem;
+    height: 100%;
 
-    .fa-graduation-cap{
+    .fa-graduation-cap {
       color: #093c1c;
     }
-    
-    .fa-briefcase{
-      color:#3c73a8;
+
+    .fa-briefcase {
+      color: #3c73a8;
     }
-    .fa-heart{
-      color:#5a0b0b;
+    .fa-heart {
+      color: #5a0b0b;
     }
   }
-
 }
 /*media queries*/
 /**everything under*/
 @media (max-width: 767px) {
-  .container{
-    display:flex;
+  .container {
+    display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
   }
 }
-

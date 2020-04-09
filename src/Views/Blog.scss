@@ -1,0 +1,14 @@
+.blogPage {
+  display: grid;
+  grid-template-columns: 20vw auto;
+  background-color: blue;
+}
+.sidebar {
+  position: fixed;
+  width: 20vw;
+  background-color: red;
+}
+.main {
+  grid-column-start: 2;
+  height: 100vh;
+}
