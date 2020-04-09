@@ -1,16 +1,17 @@
-.blogPage {
+.basic-grid {
   display: grid;
-  grid-template-columns: 20vw auto;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
-.sidebar {
-  position: fixed;
-  width: 20vw;
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.blog-cards {
+  border: 1px solid black;
 }
-.main {
-  grid-column-start: 2;
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
 }

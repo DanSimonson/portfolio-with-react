@@ -139,6 +139,7 @@ export class Portfolio extends Component {
         </div>
         {/*<div className='spacer'></div>*/}
         <Items />
+        <Footer />
       </div>
     );
   }
