@@ -6,7 +6,8 @@ const Blog = () => {
   return (
     <div className="blog-wrapper">
       <section className="basic-grid">
-        <div className="blog-cards">1</div>
+        <BlogList />
+        {/*<div className="blog-cards">1</div>
         <div className="blog-cards">2</div>
         <div className="blog-cards">3</div>
         <div className="blog-cards">4</div>
@@ -17,7 +18,7 @@ const Blog = () => {
         <div className="blog-cards">9</div>
         <div className="blog-cards">10</div>
         <div className="blog-cards">11</div>
-        <div className="blog-cards">12</div>
+        <div className="blog-cards">12</div>*/}
       </section>
     </div>
   );
