@@ -1,6 +1,5 @@
 import React from "react";
 import "./Blog.scss";
-import BlogList from "../Components/BlogList/BlogList";
 import blogPosts from "../Data/PostData.json";
 
 const Blog = () => {
