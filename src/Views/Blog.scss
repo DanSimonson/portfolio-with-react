@@ -6,6 +6,58 @@
   border: 5px solid black;
 }
 
+.maincontent {
+  position: relative;
+  width: 100%; /*250px;*/
+  height: 100%; /*320px;*/
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-out;
+}
+
+.thecard:hover,
+.thecrad:focus {
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color: #333;
+  text-align: center;
+  font-family: "zilla slab", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: green;
+  color: #fff;
+  transform: rotateY(180deg);
+  text-align: center;
+  font-family: "zilla slab", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .blog-cards {
   display: flex;
   flex-direction: column;

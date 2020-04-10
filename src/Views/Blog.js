@@ -5,8 +5,11 @@ import blogPosts from "../Data/PostData.json";
 
 const Blog = () => {
   const cardsArray = blogPosts.map((blogPost) => (
-    <div className="blog-cards" key={blogPost.id}>
-      <p>{blogPost.title}</p>
+    <div className="maincontent" key={blogPost.id}>
+      <div className="thecard">
+        <div className="thefront">{blogPost.title}</div>
+        <div className="theback">{blogPost.content}</div>
+      </div>
     </div>
   ));
 
