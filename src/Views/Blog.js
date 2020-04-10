@@ -12,8 +12,6 @@ const Blog = () => {
       </div>
     </div>
   ));
-
-  //return <div>{cardsArray}</div>;
   return (
     <div className="blog-wrapper">
       <section className="basic-grid">{cardsArray}</section>

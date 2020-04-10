@@ -3,7 +3,7 @@
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   margin-top: 5rem;
-  border: 5px solid black;
+  margin: 5rem 0 0 0;
 }
 
 .maincontent {
@@ -39,6 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 
 .theback {
@@ -56,9 +57,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 
-.blog-cards {
+/*.blog-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,19 +77,20 @@
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;*/
-}
+  background-repeat: no-repeat;
+}*/
 
-.blog-cards:hover {
+/*.blog-cards:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
     rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-  /*transform: translateY(-3px) scale(1.1);*/
-}
+  transform: translateY(-3px) scale(1.1);
+}*/
+
 .blog-wrapper {
   margin-right: auto; /* 1 */
   margin-left: auto; /* 1 */
 
-  max-width: 100%; /*1200px; /*960px; /* 2 */
+  max-width: 960px; /*100%1200px;*/
 
   padding-right: 10px; /* 3 */
   padding-left: 10px; /* 3 */
