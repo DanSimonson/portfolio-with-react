@@ -1,9 +1,10 @@
 import React from "react";
 import "./Blog.scss";
+import BlogList from "../Components/BlogList/BlogList";
 
 const Blog = () => {
   return (
-    <div className="wrapper">
+    <div className="blog-wrapper">
       <section className="basic-grid">
         <div className="blog-cards">1</div>
         <div className="blog-cards">2</div>
