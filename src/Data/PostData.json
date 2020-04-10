@@ -1,74 +1,44 @@
 [
   {
-    "id": 1,
-    "title": "First Post",
+    "id": 6,
+    "title": "React Route Parameters",
     "content": "my first post blah blah blah",
-    "slug": "first-post"
-  },
-  {
-    "id": 2,
-    "title": "Second Post",
-    "content": "my second post blah blah blah",
-    "slug": "second-post"
-  },
-  {
-    "id": 3,
-    "title": "Third Post",
-    "content": "my third post blah blah blah",
-    "slug": "third-post"
-  },
-  {
-    "id": 4,
-    "title": "First Post",
-    "content": "my first post blah blah blah",
-    "slug": "first-post"
+    "slug": "first-post",
+    "url": "https://medium.com/@dansimonson/mariposawebnet-28f78caa9bca"
   },
   {
     "id": 5,
-    "title": "Second Post",
+    "title": "Controlled VS. Uncontrolled Input in React.js",
     "content": "my second post blah blah blah",
-    "slug": "second-post"
+    "slug": "second-post",
+    "url": "https://medium.com/@dansimonson/controlled-vs-uncontrolled-input-in-react-js-30b26dc3898d"
   },
   {
-    "id": 6,
-    "title": "First Post",
+    "id": 4,
+    "title": "Compare Vue to React",
+    "content": "my third post blah blah blah",
+    "slug": "third-post",
+    "url": "https://medium.com/@dansimonson/compare-vue-to-react-71af8e5130ed"
+  },
+  {
+    "id": 3,
+    "title": "Easy Modal-Lightbox",
     "content": "my first post blah blah blah",
-    "slug": "first-post"
+    "slug": "first-post",
+    "url": "https://medium.com/@dansimonson/easy-modal-lightbox-136de77f56de"
   },
   {
-    "id": 7,
-    "title": "Second Post",
+    "id": 2,
+    "title": "Vue.js Tabs without frameworks",
     "content": "my second post blah blah blah",
-    "slug": "second-post"
+    "slug": "second-post",
+    "url": "https://medium.com/@dansimonson/dan-simonson-portfolio-and-blog-7d10f1aba4a7"
   },
   {
-    "id": 8,
-    "title": "Third Post",
-    "content": "my third post blah blah blah",
-    "slug": "third-post"
-  },
-  {
-    "id": 9,
-    "title": "Third Post",
-    "content": "my third post blah blah blah",
-    "slug": "third-post"
-  },
-  {
-    "id": 10,
-    "title": "First Post",
+    "id": 1,
+    "title": "Passing Props And Mutating State: A family affair",
     "content": "my first post blah blah blah",
-    "slug": "first-post"
-  },
-  {
-    "id": 11,
-    "title": "Second Post",
-    "content": "my second post blah blah blah",
-    "slug": "second-post"
-  },
-  {
-    "id": 12,
-    "title": "Third Post",
-    "content": "my third post blah blah blah",
-    "slug": "third-post"
+    "slug": "first-post",
+    "url": "https://medium.com/@dansimonson/dan-simonson-portfolio-and-blog-e925363f5669"
   }
 ]
