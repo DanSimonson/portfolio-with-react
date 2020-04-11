@@ -2,8 +2,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  margin-top: 5rem;
-  margin: 5rem 0 0 0;
+  margin: 8.5rem 0 0 0;
 }
 
 .maincontent {
@@ -95,3 +94,122 @@
   padding-right: 10px; /* 3 */
   padding-left: 10px; /* 3 */
 }
+.blog-nav
+  > .blog-nav_navbar
+  > .blog-nav_list
+  > .blog-nav_item
+  > .blog-nav_link {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    white 50%
+  );
+  background-size: 220%;
+  transition: all 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.blog-nav
+  > .blog-nav_navbar
+  > .blog-nav_list
+  > .blog-nav_item
+  > .blog-nav_link:hover,
+.blog-nav_link:active {
+  /*font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, red 0%, red 50%, white 50%);
+  background-size: 100%;*/
+  background-position: 100%;
+  color: #333;
+  transform: translateX(1rem);
+}
+.blog-nav > .blog-nav_navbar > .blog-nav_list > .blog-nav_item {
+  margin: 1rem;
+}
+.blog-nav > .blog-nav_navbar > .blog-nav_list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+
+.blog-nav > .blog-nav_navbar {
+  height: 100vh;
+  width: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  transition: all 0.8s cubic-bezier(0.12, 0, 0.39, 0);
+}
+.blog-nav > .blog-checkbox {
+  display: none;
+}
+.blog-nav > .blog-nav_button {
+  background-color: black;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  z-index: 2000;
+}
+.blog-nav > .blog-nav_background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-image: radial-gradient(lightgreen, darkgreen);
+  z-index: 1000;
+  transition: transform 0.8s;
+}
+
+.blog-checkbox:checked ~ .blog-nav_background {
+  transform: scale(80);
+}
+
+.blog-checkbox:checked ~ .blog-nav_navbar {
+  width: 100%;
+  opacity: 1;
+}
+
+/*.blog-nav {
+  &blog-checkbox {
+  }
+  &blog-nav_button {
+  }
+  .blog-nav_background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: green;
+  }
+  &blog-nav_navbar {
+  }
+  &blog-nav_list {
+  }
+  &blog-nav_item {
+  }
+  &blog-nav_link {
+  }
+}*/
