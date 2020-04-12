@@ -9,10 +9,6 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  //<a href="https://medium.com/@dansimonson" target="_blank">My Blog</a>
-  //"https://medium.com/@dansimonson"
-  /** */
-
   const cardsArray = blogPosts.map((blogPost) => (
     <div className="maincontent" key={blogPost.id}>
       <div className="thecard">

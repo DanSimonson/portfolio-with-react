@@ -11,11 +11,6 @@ export class Footer extends Component {
     return (
       <footer class="footer-basic-centered">
         <p class="footer-company-motto">Contact: dansimonson@mariposaweb.net</p>
-        {/*<p class="footer-links">				
-				·
-				<a href="https://medium.com/@dansimonson" target="_blank">My Blog</a>
-				·				
-    </p>*/}
         <p className="footer-links">
           <NavLink to="/blog">My Blog</NavLink>
         </p>
