@@ -12,11 +12,7 @@ const Blog = () => {
   const cardsArray = blogPosts.map((blogPost) => (
     <div className="maincontent" key={blogPost.id}>
       <div className="thecard">
-        <div className="thefront">
-          <a className="blog-a" href={blogPost.url} target="_blank">
-            {blogPost.title}
-          </a>
-        </div>
+        <div className="thefront">{blogPost.title}</div>
         <div className="theback">
           <a className="blog-a" href={blogPost.url} target="_blank">
             {blogPost.content}
