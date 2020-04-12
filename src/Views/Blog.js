@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Blog.scss";
 import blogPosts from "../Data/PostData.json";
+import butterfly from "../assets/butterfly4.jpg";
 
 const Blog = () => {
   const cardsArray = blogPosts.map((blogPost) => (
@@ -30,7 +31,16 @@ const Blog = () => {
           </ul>
         </nav>
       </div>
-      <div className="blog-wrapper">
+      <div
+        className="blog-wrapper"
+        style={{
+          backgroundImage: `
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${butterfly})
+      `,
+          backgroundPosition: `cover`,
+        }}
+      >
+        <header className="blog-header">Dan's Blog Posts</header>
         <section className="basic-grid">{cardsArray}</section>
       </div>
     </>
