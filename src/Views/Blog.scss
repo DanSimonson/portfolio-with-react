@@ -94,6 +94,56 @@
   padding-right: 10px; /* 3 */
   padding-left: 10px; /* 3 */
 }
+
+/*start hamburger*/
+
+.blog-nav > .blog-nav_button > .blog-nav_icon {
+  position: relative;
+  margin-top: 3.5rem;
+}
+.blog-nav > .blog-nav_button > .blog-nav_icon,
+.blog-nav_icon::before,
+.blog-nav_icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: blanchedalmond;
+  display: inline-block;
+}
+.blog-nav > .blog-nav_button > .blog-nav_icon::before,
+.blog-nav_icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.blog-nav > .blog-nav_button > .blog-nav_icon::before {
+  top: -0.8rem;
+}
+
+.blog-nav > .blog-nav_button > .blog-nav_icon::after {
+  top: 0.8rem;
+}
+
+.blog-nav > .blog-nav_button:hover > .blog-nav_icon::before {
+  top: -1rem;
+}
+.blog-nav > .blog-nav_button:hover > .blog-nav_icon::after {
+  top: 1rem;
+}
+.blog-checkbox:checked ~ .blog-nav_button > .blog-nav_icon {
+  background-color: transparent;
+}
+.blog-checkbox:checked ~ .blog-nav_button > .blog-nav_icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.blog-checkbox:checked ~ .blog-nav_button > .blog-nav_icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/*end hamburger*/
+
 .blog-nav
   > .blog-nav_navbar
   > .blog-nav_list
@@ -133,6 +183,7 @@
   color: #333;
   transform: translateX(1rem);
 }
+
 .blog-nav > .blog-nav_navbar > .blog-nav_list > .blog-nav_item {
   margin: 1rem;
 }
@@ -168,6 +219,8 @@
   right: 1rem;
   border-radius: 50%;
   z-index: 2000;
+  text-align: center;
+  cursor: pointer;
 }
 .blog-nav > .blog-nav_background {
   height: 6rem;

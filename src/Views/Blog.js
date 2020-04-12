@@ -17,7 +17,7 @@ const Blog = () => {
       <div className="blog-nav">
         <input type="checkbox" className="blog-checkbox" id="blog-toggle" />
         <label htmlFor="blog-toggle" className="blog-nav_button">
-          menu
+          <span className="blog-nav_icon">&nbsp;</span>
         </label>
         <div className="blog-nav_background">&nbsp;</div>
         <nav className="blog-nav_navbar">
