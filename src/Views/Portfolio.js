@@ -11,6 +11,7 @@ import Card from "../Components/Card/Card";
 import Items from "../Components/Items/Items";
 import data from "../Data/Data";
 import { CSSTransition } from "react-transition-group";
+import { NavLink } from "react-router-dom";
 
 export class Portfolio extends Component {
   constructor(props) {

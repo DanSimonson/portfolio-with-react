@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Blog.scss";
 import blogPosts from "../Data/PostData.json";
 import butterfly from "../assets/butterfly4.jpg";
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  //<a href="https://medium.com/@dansimonson" target="_blank">My Blog</a>
+  //"https://medium.com/@dansimonson"
+  /** */
+
   const cardsArray = blogPosts.map((blogPost) => (
     <div className="maincontent" key={blogPost.id}>
       <div className="thecard">
-        <div className="thefront">{blogPost.title}</div>
-        <div className="theback">{blogPost.content}</div>
+        <div className="thefront">
+          <a className="blog-a" href={blogPost.url} target="_blank">
+            {blogPost.title}
+          </a>
+        </div>
+        <div className="theback">
+          <a className="blog-a" href={blogPost.url} target="_blank">
+            {blogPost.content}
+          </a>
+        </div>
       </div>
     </div>
   ));
