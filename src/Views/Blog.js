@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Blog.scss";
-import blogPosts from "../Data/PostData.json";
 import butterfly from "../assets/butterfly4.jpg";
+import { connect } from "react-redux";
 
-const Blog = () => {
+const Blog = ({ BlogPosts }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const cardsArray = blogPosts.map((blogPost) => (
+  const cardsArray = BlogPosts.map((blogPost) => (
     <div className="maincontent" key={blogPost.id}>
       <div className="thecard">
         <div className="thefront">{blogPost.title}</div>
@@ -21,6 +21,7 @@ const Blog = () => {
       </div>
     </div>
   ));
+
   return (
     <>
       <div className="blog-nav">
@@ -55,4 +56,10 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+const mapStateToProps = (state) => {
+  return {
+    BlogPosts: state.BlogPosts,
+  };
+};
+
+export default connect(mapStateToProps)(Blog);
