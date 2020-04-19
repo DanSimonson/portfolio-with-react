@@ -1,15 +1,15 @@
 import React from "react";
-import "./NewBlogPost.scss";
+//import "./NewBlogPost.scss";
 import { connect } from "react-redux";
 import { createStore } from "redux";
 import RootReducer from "../Reducers/RootReducer";
-import { getFirestore } from "../WrapFirestore";
-import firebase from "./Firestore";
+//import { getFirestore } from "../WrapFirestore";
+//import { db } from "../Firebase/index";
 
 function NewBlogPost(props) {
-  const db = firebase.firestore();
-  let temp = getFireData();
-  console.log("firestoreData: ", temp);
+  //const db = firebase.firestore();
+  //let temp = getFirestore();
+  //console.log("firestoreData: ", temp);
   //console.log("props: ", props);
   const store = createStore(RootReducer);
   //console.log("store: ", store.getState());
