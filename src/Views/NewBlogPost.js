@@ -1,27 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 //import "./NewBlogPost.scss";
 import { connect } from "react-redux";
 import { createStore } from "redux";
 import RootReducer from "../Reducers/RootReducer";
-//import { getFirestore } from "../WrapFirestore";
-//import { db } from "../Firebase/index";
+import { getFireData } from "../WrapFirestore";
+import { getFirestoreData } from "../Actions/Actions";
 
 function NewBlogPost(props) {
-  //const db = firebase.firestore();
-  //let temp = getFirestore();
-  //console.log("firestoreData: ", temp);
-  //console.log("props: ", props);
+  let tempData = getFireData();
   const store = createStore(RootReducer);
-  //console.log("store: ", store.getState());
+  const [getData, setGetData] = useState("");
+  const [postData, setPostData] = useState("");
+
+  useEffect(() => {
+    setGetData(getFireData());
+    //let tempData = getData;
+  }, []);
+
+  //{ type: "GET_BLOGPOST", payload: tempData }
+  //store.dispatch(getFirestoreData(getData));
+  //store.dispatch({ type: "GET_BLOGPOST", payload: tempData });
 
   store.subscribe(() => {
     console.log("subscription: ", store.getState());
   });
 
   const handleClick = () => {
-    //console.log("in handleClick props", props);
-    //props.handleClick();
-    store.dispatch({ type: "ADD_BLOGPOST" });
+    //store.dispatch({ type: "ADD_BLOGPOST", tempData });
   };
 
   return (
@@ -35,6 +40,7 @@ function NewBlogPost(props) {
 }
 
 const mapStateToProps = (state) => {
+  console.log("blog post", state.BlogPosts);
   return {
     BlogPosts: state.BlogPosts,
   };
@@ -42,9 +48,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleClick: (dispatch) => NewBlogPost("ADD_BLOGPOST"),
+    //handleClick: (dispatch) => NewBlogPost("ADD_BLOGPOST", {}),
+    //dispatch({ type: "GET_DATA", payload: ''})
   };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewBlogPost);
-//export default connect(mapStateToProps)(Blog);

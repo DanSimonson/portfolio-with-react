@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.7.0",
+    "firebase": "^7.14.1",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
@@ -16,7 +17,8 @@
     "react-scroll": "^1.7.11",
     "react-transition-group": "^4.0.1",
     "react-typist": "^2.0.5",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

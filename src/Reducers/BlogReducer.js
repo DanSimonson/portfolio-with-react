@@ -50,7 +50,27 @@ const initState = {
 };
 
 const BlogReducer = (state = initState, action) => {
-  return state.BlogPosts;
+  //console.log("state: ", state);
+  //console.log("action.type: ", action.type);
+  switch (action.type) {
+    case "GET_DATA":
+      {
+        //authenticated: true;
+        //return { ...state.BlogPosts, ...action.payload };
+        //return state.BlogPosts;
+      }
+      break;
+    case "ADD_DATA":
+      {
+        //authenticated: false;
+        //return state;
+        return state.BlogPosts;
+      }
+      break;
+    default:
+      return state.BlogPosts;
+  }
+  //return state.BlogPosts;
 };
 
 export default BlogReducer;
