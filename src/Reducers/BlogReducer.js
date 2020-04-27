@@ -5,7 +5,7 @@ const initState = {
       title: "Reminder-list",
       content: "React Reminder List App with Redux state management ",
       slug: "first-post",
-      url: "https://heuristic-neumann-ad864a.netlify.app/reminder-list/",
+      url: "https://blog.mariposaweb.net/reminder-list/",
     },
     {
       id: 6,
