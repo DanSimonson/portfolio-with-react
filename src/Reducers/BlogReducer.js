@@ -1,6 +1,13 @@
 const initState = {
   BlogPosts: [
     {
+      id: 7,
+      title: "Reminder-list",
+      content: "React Reminder List App with Redux state management ",
+      slug: "first-post",
+      url: "https://heuristic-neumann-ad864a.netlify.app/reminder-list/",
+    },
+    {
       id: 6,
       title: "React Route Parameters",
       content: "Learn how to dynamically link using router params",
