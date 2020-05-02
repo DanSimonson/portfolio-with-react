@@ -1,6 +1,13 @@
 const initState = {
   BlogPosts: [
     {
+      id: 8,
+      title: "Reminder-list-async",
+      content: "React, redux with asynchrounous api calls using Thunk ",
+      slug: "first-post",
+      url: "https://blog.mariposaweb.net/reminder-list-async/",
+    },
+    {
       id: 7,
       title: "Reminder-list",
       content: "React Reminder List App with Redux state management ",
