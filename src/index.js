@@ -6,11 +6,11 @@ import "font-awesome/css/font-awesome.min.css";
 import "animate.css/animate.min.css";
 import * as serviceWorker from "./serviceWorker";
 import { createStore, applyMiddleware } from "redux";
-import RootReducer from "./Reducers/RootReducer";
+import BlogReducer from "./Reducers/BlogReducer";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 
-const store = createStore(RootReducer, applyMiddleware(thunk));
+const store = createStore(BlogReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>

@@ -3,8 +3,10 @@ import { NavLink } from "react-router-dom";
 import "./Blog.scss";
 import butterfly from "../assets/butterfly4.jpg";
 import { connect } from "react-redux";
+import { getPosts } from "../Actions/Actions";
 
-const Blog = ({ BlogPosts }) => {
+const Blog = ({ data }) => {
+  const { BlogPosts } = data;
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -58,8 +60,15 @@ const Blog = ({ BlogPosts }) => {
 
 const mapStateToProps = (state) => {
   return {
-    BlogPosts: state.BlogPosts,
+    data: state,
   };
 };
 
-export default connect(mapStateToProps)(Blog);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    //actions may be dispatched in the future for this project
+    //getPosts: () => dispatch(getPosts()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Blog);
