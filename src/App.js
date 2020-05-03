@@ -1,3 +1,9 @@
+/**
+ *
+ * This page not currently being used.
+ *
+ */
+
 import React from "react";
 import "./App.scss";
 import Portfolio from "./Views/Portfolio";
