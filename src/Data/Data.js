@@ -91,7 +91,7 @@ const data = {
               "carSpaces": 1*/
     },
     {
-      _id: "593e92975996a6263d146444",
+      _id: "593e92975996a6263d146443",
       index: 5,
       name: "customer-list",
       link: "https://cocky-fermi-ea251a.netlify.com/",
@@ -108,10 +108,15 @@ const data = {
               "bathrooms": 1,
               "carSpaces": 1 */
     },
-    /*{
-              "_id": "593e9297a13e246da5ba0884",
-              "index": 6,
-              "price": 595377,
+    {
+      _id: "593e9297a13e246da5ba0884",
+      index: 6,
+      name: "Ghie-als",
+      link: "https://jovial-bardeen-ffff02.netlify.app",
+      url: "https://github.com/DanSimonson/ghie-als",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1597114370/projectPhotos/dossier/logoALSCropPortfolio.png",
+      /*"price": 595377,
               "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property02.jpg",
               "city": "Allison",
               "address": "787 Gerald Court",
@@ -119,9 +124,9 @@ const data = {
               "longitude": 151.25774,
               "bedrooms": 2,
               "bathrooms": 2,
-              "carSpaces": 2
-          },
-          {
+              "carSpaces": 2*/
+    },
+    /* {
               "_id": "593e9297afa51a013fcd07d5",
               "index": 7,
               "price": 696189,
