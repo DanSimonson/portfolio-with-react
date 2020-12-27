@@ -82,6 +82,9 @@ export class Portfolio extends Component {
           <a href="https://github.com/DanSimonson/" target="_blank">
             <i className="fa fa-github portfolio-header--icon" />
           </a>
+          <a href="https://mariposaweb.net/blog" target="_blank">
+            <i className="fa fa-rss portfolio-header--icon" />
+          </a>
           <a href="https://www.facebook.com/mariposaweb.net/" target="_blank">
             <i className="fa fa-facebook-official portfolio-header--icon" />
           </a>
