@@ -1,0 +1,9 @@
+{
+    "notebook.kernelProviderAssociations": [
+
+    
+    ],
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications"
+}
