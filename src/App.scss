@@ -92,10 +92,15 @@ section h1 {
 
 /* Card */
 .card-container {
-  position: relative;
+  //position: relative;
   /*max-width: 226px;*/
-  margin: 0 auto;
+  //margin: 0 auto;
   /*border:5px solid black;*/
+  position: relative;
+  max-width: 400px;//226px;
+  margin: 0 auto;
+  padding: 10%;
+  font-size:1.8rem;
 }
 
 .card {

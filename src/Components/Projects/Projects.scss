@@ -43,13 +43,12 @@
 .projects-item:hover{
   /*background-color: #737373; */
 }
-.card-container {
+//duplicate rule, using class in Global App.scss
+/*.card-container {
   //border: 5px solid green;
   position: relative;
-  //max-width: 226px;
+  max-width: 400px;//226px;
   margin: 0 auto;
   padding: 10%;
   font-size:1.8rem;
-  
-
-}
+}*/
