@@ -28,12 +28,13 @@ function DisplayGrid() {
             content: 'Full-Stack Developer updating auctionos.com\'s operating system for car auctions.',
             src: 'https://fakeimg.pl/400x300/009578/fff/',
         },
-        /*{
+        {
             id: '5',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.',
+            title: 'Next Egg',
+            content: 'The next egg hatched could be your business. Call or Email me for more information.',
             src: 'https://fakeimg.pl/400x300/009578/fff/',
         },
-        {
+        /*{
             id: '6',
             content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.',
             src: 'https://fakeimg.pl/400x300/009578/fff/',

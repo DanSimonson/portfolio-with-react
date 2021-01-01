@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+//import { NavLink } from 'react-router-dom'
 import butterfly from "../assets/butterfly.jpg";
 import "./Portfolio.scss";
 import Projects from "../Components/Projects/Projects";
@@ -97,6 +98,19 @@ export class Portfolio extends Component {
           <a href="https://twitter.com/simonsondan?lang=en" target="_blank">
             <i className="fa fa-twitter-square portfolio-header--icon" />
           </a>
+          <ul id='pageLink'>
+            <NavLink
+              to="/DisplayGrid"
+              //activeStyle={{ color: 'red' }}
+              className='headerTag'
+            >
+              See My Accomplishments
+            </NavLink>
+            {/*<a href="https://twitter.com/simonsondan?lang=en" target="_blank">
+              <i className="fa fa-twitter-square portfolio-header--icon" />
+            </a>*/}
+          </ul>
+
           <h1 className="portfolio-header-title">
             <Typist
               onTypingDone={this.startInfo}
