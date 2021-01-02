@@ -41,10 +41,19 @@ transition: opacity 1000ms linear;
   list-style-type: none;
 }
 .headerTag{
+  position: relative;
   text-decoration: none;
   color: #fff;
   font-size: 2rem;
+  animation: headerTagAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
+@keyframes headerTagAnime {
+  0%{top: -50px}
+  100%{top: 50px;}
+}
+
 .headerTag:visited {
   color: #fff;
 }

@@ -101,14 +101,10 @@ export class Portfolio extends Component {
           <ul id='pageLink'>
             <NavLink
               to="/DisplayGrid"
-              //activeStyle={{ color: 'red' }}
               className='headerTag'
             >
               See My Contracting Accomplishments
             </NavLink>
-            {/*<a href="https://twitter.com/simonsondan?lang=en" target="_blank">
-              <i className="fa fa-twitter-square portfolio-header--icon" />
-            </a>*/}
           </ul>
 
           <h1 className="portfolio-header-title">
@@ -153,9 +149,7 @@ export class Portfolio extends Component {
           >
             Next
           </button>
-          {/*<button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>*/}
         </div>
-        {/*<div className='spacer'></div>*/}
         <Items />
         <Footer />
       </div>
