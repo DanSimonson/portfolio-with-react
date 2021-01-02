@@ -13,33 +13,34 @@ function DisplayGrid() {
         },
         {
             id: '2',
+            title: 'Routematch',
+            content: 'I developed a web page within a web portal that consumed an API and utilized a continuous scrolling table.',
+            src: 'https://fakeimg.pl/400x300/009578/fff/',
+        },
+        {
+            id: '3',
             title: 'Macys',
             content: 'I helped develep a web application allowing Macy\'s employees to track logistical shipping data for products sent to Macy\'s Backstage stores.',
             src: 'https://fakeimg.pl/400x300/009578/fff/',
         },
         {
-            id: '3',
+            id: '4',
             title: 'Monsanto',
             content: 'Primary Front End Developer creating a sales dashboard allowing Monsanto to organize and track their farm business partners.',
             src: 'https://fakeimg.pl/400x300/009578/fff/',
         },
         {
-            id: '4',
+            id: '5',
             title: 'auctionOS',
             content: 'Full-Stack Developer updating auctionos.com\'s operating system for car auctions.',
             src: 'https://fakeimg.pl/400x300/009578/fff/',
         },
         {
-            id: '5',
+            id: '6',
             title: 'Next Egg',
             content: 'The next egg hatched could be your business. Call or Email me for more information.',
             src: 'https://fakeimg.pl/400x300/009578/fff/',
         },
-        /*{
-            id: '6',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.',
-            src: 'https://fakeimg.pl/400x300/009578/fff/',
-        }*/
     ]
     useEffect(() => {
         const cardElement = document.querySelector(".card__inner");
