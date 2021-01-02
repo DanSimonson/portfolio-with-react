@@ -48,8 +48,6 @@
   background-size: cover;
 
 }
-
-
 .display-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
@@ -62,7 +60,6 @@
   margin: 0.5rem;
   padding: 0.5rem;
 }
-
 .display-content{
   padding: 80px 70px 50px 70px;//30px;
   text-align: center;
@@ -114,8 +111,6 @@
   //background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
   //border:5px sold red;
 }
-
-
 /** flip card css **/
 .card_outer {
   margin: 20px auto 20px auto;
@@ -123,7 +118,6 @@
   height: 400px;
   perspective: 1000px;
 }
-
 .card__inner {
   width: 100%;
   height: 100%;
@@ -131,13 +125,10 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
- 
 }
-
 .card__inner.is-flipped {
   transform: rotateX(180deg);
 }
-
 .card__face {
   border: 5px solid yellow;
   position: absolute;
@@ -148,38 +139,31 @@
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-  
 }
-
 .card__face--front {
   background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .card__face--back {
   background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
   transform: rotateX(180deg);
 }
-
 .card__content {
   width: 100%;
   height: 100%;
 }
-
 .card__body {
   padding: 80px 70px 50px 70px;//30px;
   text-align: center;
 }
-
 .card__body h3 {
   color: var(--dark);
   font-size: 14px;//24px;
   font-weight: 600;
   margin-bottom: 15px;
 }
-
 .card__body p {
   color: var(--dark);
   font-size: 12px;//18px;
@@ -189,6 +173,122 @@
   margin-top: 15px;
 }
 /** end flip card **/
+/** navbar **/
+.displaygrid_navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #8d9093;
+}
+
+.displaygrid_brand_title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.displaygrid_navbar_links {
+  height: 100%;
+}
+
+.displaygrid_navbar_links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.displaygrid_navbar_links li {
+  list-style: none;
+}
+
+/*.displaygrid_navbar_links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}*/
+/*.displaygrid_navbar_links ul li a.displaygrid_navlink{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}*/
+
+/*.displaygrid_navbar_links li:hover {
+  background-color: white;
+}*/
+
+.displaygrid_toggle_button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.displaygrid_toggle_button .displaygrid_bar {
+  height: 3px;
+  width: 100%;
+  background-color: #8d9093;
+  border-radius: 10px;
+}
+
+a.displaygrid_navlink {
+  color: #8d9093;
+  text-decoration: none;
+  padding: 1rem;
+}
+a.displaygrid_navlink:hover {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .displaygrid_navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .displaygrid_toggle_button {
+      display: flex;
+  }
+
+  .displaygrid_navbar_links {
+      display: none;
+      width: 100%;
+  }
+
+  .displaygrid_navbar_links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  /*.displaygrid_navbar_links ul > a.displayLink {
+      text-align: center;
+  }*/
+
+  /*.displaygrid_navbar_links ul li a {
+      padding: .5rem 1rem;
+  }*/
+
+  .displaygrid_navbar_links.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  a.displaygrid_navlink {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 1rem;   
+  }
+}
+
+/** end navbar **/
+
+
 
 @media only screen and (min-width: 375px) {
   .display-content{

@@ -104,7 +104,7 @@ export class Portfolio extends Component {
               //activeStyle={{ color: 'red' }}
               className='headerTag'
             >
-              See My Accomplishments
+              See My Contracting Accomplishments
             </NavLink>
             {/*<a href="https://twitter.com/simonsondan?lang=en" target="_blank">
               <i className="fa fa-twitter-square portfolio-header--icon" />

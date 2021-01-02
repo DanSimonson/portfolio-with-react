@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './DisplayGrid.scss'
 import DisplayFooter from '../Components/Footer/DisplayFooter'
 import ScrollAnimation from 'react-animate-on-scroll';
+import { NavLink, Link } from 'react-router-dom'
 function DisplayGrid() {
     let cards = [
         {
@@ -42,27 +43,46 @@ function DisplayGrid() {
     ]
     useEffect(() => {
         const cardElement = document.querySelector(".card__inner");
+        const toggleButton = document.getElementsByClassName('displaygrid_toggle_button')[0]
+        const navbarLinks = document.getElementsByClassName('displaygrid_navbar_links')[0]
         cardElement.addEventListener("click", function (e) {
             cardElement.classList.toggle('is-flipped');
         });
-        /*cardElement.addEventListener("mouseout", function (e) {
-            cardElement.classList.toggle('is-flipped');
-        });*/
-        /*cardElement.addEventListener("mouseenter", function (e) {
-            cardElement.classList.toggle('is-flipped');
-        });*/
-
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
     }, [])
 
     return (
         <React.Fragment>
             <div className='bodyWrap'>
                 <div className='heroImage'>
-                    <div className='bg-image'>
-
-                    </div>
-
+                    <div className='bg-image'></div>
                 </div>
+                <nav className='displaygrid_navbar'>
+                    <div className='displaygrid_brand_title'>
+                        MARIPOSAWEB
+                    </div>
+                    <a href='#' className='displaygrid_toggle_button'>
+                        <span className='displaygrid_bar'></span>
+                        <span className='displaygrid_bar'></span>
+                        <span className='displaygrid_bar'></span>
+                    </a>
+                    <div className='displaygrid_navbar_links'>
+                        <ul>
+                            {/*<li><a href='#'>Home</a></li>*/}
+                            <NavLink to='/' className='displaygrid_navlink'
+                                activeClassName='displaygrid_navlink_active'>
+                                Home
+                            </NavLink>
+                            <NavLink to='/blog' className='displaygrid_navlink'
+                                activeClassName='displaygrid_navlink_active'>
+                                Blog
+                            </NavLink>
+                            {/*<li><a href='#'>Blog</a></li>*/}
+                        </ul>
+                    </div>
+                </nav>
                 <div className='accomplishments'>
                     <h1>Contracting </h1>
                     <h1> Accomplishments</h1>
