@@ -13,6 +13,7 @@ import Items from "../Components/Items/Items";
 import data from "../Data/Data";
 import { CSSTransition } from "react-transition-group";
 import { NavLink } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 export class Portfolio extends Component {
   constructor(props) {
@@ -68,10 +69,32 @@ export class Portfolio extends Component {
       );
     }
   };
+
+  typewriter = new Typewriter(null, {
+    loop: true,
+    //delay: 75,
+    //onCreateTextNode: customNodeCreator,
+    //onRemoveNode: onRemoveNode,
+  });
+
   render() {
     const { appearHome, property } = this.state;
     return (
       <div className="portfolio">
+        <NavLink to="/DisplayGrid">
+        <div className="absoluteCircle">
+          <Typewriter
+          className='typewriterText'
+          options={{
+            strings: ['See Contracting Accomplishments'],
+            pauseFor: 1500,
+            delay: 200,
+            autoStart: true,
+            loop: true,
+          }}
+          />
+        </div>
+        </NavLink>
         <header
           className="portfolio-header"
           style={{
@@ -98,11 +121,8 @@ export class Portfolio extends Component {
           <a href="https://twitter.com/simonsondan?lang=en" target="_blank">
             <i className="fa fa-twitter-square portfolio-header--icon" />
           </a>
-          <ul id='pageLink'>
-            <NavLink
-              to="/DisplayGrid"
-              className='headerTag'
-            >
+          <ul id="pageLink">
+            <NavLink to="/DisplayGrid" className="headerTag">
               See My Contracting Accomplishments
             </NavLink>
           </ul>
