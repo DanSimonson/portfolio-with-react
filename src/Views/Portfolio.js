@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import { NavLink } from 'react-router-dom'
 import butterfly from "../assets/butterfly.jpg";
 import "./Portfolio.scss";
 import Projects from "../Components/Projects/Projects";
@@ -57,44 +56,23 @@ export class Portfolio extends Component {
   renderTypist = () => {
     if (this.state.typing) {
       return (
-        <Typist onTypingDone={this.onDone}>
-          Dan Simonson
-          <Typist.Backspace count={14} delay={400} />
-          <Typist.Delay ms={200} />
-          a Web Developer
-          <Typist.Backspace count={20} delay={400} />
-          Chief and only Software Engineer at mariposaweb.net
-          <Typist.Backspace count={51} delay={400} />
+        <Typist 
+         className='type' 
+         onTypingDone={this.onDone}
+         avgTypingDelay={100}
+         >
+          Click to see my contracting accomplishments
+          <Typist.Backspace count={44} delay={400} />
+          <Typist.Delay ms={400} />
         </Typist>
       );
     }
   };
 
-  typewriter = new Typewriter(null, {
-    loop: true,
-    //delay: 75,
-    //onCreateTextNode: customNodeCreator,
-    //onRemoveNode: onRemoveNode,
-  });
-
   render() {
     const { appearHome, property } = this.state;
     return (
       <div className="portfolio">
-        <NavLink to="/DisplayGrid">
-        <div className="absoluteCircle">
-          <Typewriter
-          className='typewriterText'
-          options={{
-            strings: ['See Contracting Accomplishments'],
-            pauseFor: 1500,
-            delay: 200,
-            autoStart: true,
-            loop: true,
-          }}
-          />
-        </div>
-        </NavLink>
         <header
           className="portfolio-header"
           style={{
@@ -121,24 +99,22 @@ export class Portfolio extends Component {
           <a href="https://twitter.com/simonsondan?lang=en" target="_blank">
             <i className="fa fa-twitter-square portfolio-header--icon" />
           </a>
-          <ul id="pageLink">
-            <NavLink to="/DisplayGrid" className="headerTag">
-              See My Contracting Accomplishments
-            </NavLink>
-          </ul>
-
+          
           <h1 className="portfolio-header-title">
+          <NavLink to="/DisplayGrid"> 
             <Typist
+              className='type'
               onTypingDone={this.startInfo}
               cursor={{
                 show: false,
                 hideWhenDone: true,
                 hideWhenDoneDelay: 0,
               }}
-            >
-              Hi. I am&nbsp;
+            > 
+              Hi, I'm Dan Simonson. Software Engineer at mariposweb.net
             </Typist>
             {this.renderTypist()}
+            </NavLink>
           </h1>
           <ScrollLink smooth={true} to="proj">
             <DownArrow />
