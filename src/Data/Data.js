@@ -119,8 +119,17 @@ const data = {
               "carSpaces": 1*/
     },
     {
-      _id: "593e92975996a6263d146443",
+      _id: "593e9297afa51a013fcd07d5zxs",
       index: 7,
+      name: "hooks-redux",
+      link: "https://brave-galileo-008804.netlify.app/",
+      url: "https://github.com/DanSimonson/ducks_redux",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1614038405/projectPhotos/dossier/template_primary.jpg",
+    },
+    {
+      _id: "593e92975996a6263d146443",
+      index: 8,
       name: "customer-list",
       link: "https://cocky-fermi-ea251a.netlify.com/",
       url: "https://github.com/DanSimonson/customer-list",
@@ -138,7 +147,7 @@ const data = {
     },
     {
       _id: "593e9297a13e246da5ba0884",
-      index: 8,
+      index: 9,
       name: "Ghie-als",
       link: "https://jovial-bardeen-ffff02.netlify.app",
       url: "https://github.com/DanSimonson/ghie-als",
