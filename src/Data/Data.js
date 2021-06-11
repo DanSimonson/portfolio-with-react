@@ -1,8 +1,17 @@
 const data = {
   properties: [
     {
-      _id: "593e9297e17df20c4a237s98",
+      _id: "593e9401e17df20c4a237s98",
       index: 0,
+      name: "mariposa online store",
+      url: "https://github.com/DanSimonson/dan_ghie_store",
+      link: "https://dan-ghie-store.herokuapp.com/",
+      picture:
+        "https://res.cloudinary.com/dmglopmul/image/upload/v1623451582/projectPhotos/dossier/shop.jpg",
+    },
+    {
+      _id: "593e9297e17df20c4a237s98",
+      index: 1,
       name: "mariposa spa website",
       url: "https://github.com/DanSimonson/mariposa_spa_website",
       link: "https://spamariposa.herokuapp.com/",
@@ -11,7 +20,7 @@ const data = {
     },
     {
       _id: "593e9297e17df20c4a237s42",
-      index: 1,
+      index: 2,
       name: "Reservation System",
       url: "https://github.com/DanSimonson/full_stack_mariposa_reservation",
       link: "https://mysterious-escarpment-64882.herokuapp.com/",
@@ -30,7 +39,7 @@ const data = {
     },
     {
       _id: "593e9297e17df20c4a237d42",
-      index: 2,
+      index: 3,
       name: "Avenger Application",
       url: "https://github.com/DanSimonson/dossiers",
       link: "https://tender-shockley-0f4de4.netlify.com/",
@@ -49,7 +58,7 @@ const data = {
     },
     {
       _id: "593e9297ec4cca9c56bf61af",
-      index: 3,
+      index: 4,
       name: "Wysiwyg Keeper",
       link: "https://romantic-agnesi-f35b5d.netlify.com/",
       url: "https://github.com/DanSimonson/wysiwyg",
@@ -67,7 +76,7 @@ const data = {
     },
     {
       _id: "593e929773c71925e5d7c11c",
-      index: 4,
+      index: 5,
       name: "Shining Nature",
       link: "https://brave-mccarthy-f6fbb2.netlify.com",
       url: "https://github.com/DanSimonson/shining",
@@ -85,7 +94,7 @@ const data = {
     },
     {
       _id: "593e92973d4d15eedb129aee",
-      index: 5,
+      index: 6,
       name: "Hangman Game",
       link: "https://hardcore-goldstine-f16387.netlify.com/",
       url: "https://github.com/DanSimonson/react-hangman",
@@ -101,7 +110,7 @@ const data = {
     },
     {
       _id: "593e92975996a6263d146444",
-      index: 6,
+      index: 7,
       name: "mariposaweb-shop",
       link: "https://agile-oasis-31054.herokuapp.com/",
       url: "https://github.com/DanSimonson/cart",
@@ -120,7 +129,7 @@ const data = {
     },
     {
       _id: "593e9297afa51a013fcd07d5zxs",
-      index: 7,
+      index: 8,
       name: "hooks-redux",
       link: "https://brave-galileo-008804.netlify.app/",
       url: "https://github.com/DanSimonson/ducks_redux",
@@ -129,7 +138,7 @@ const data = {
     },
     {
       _id: "593e92975996a6263d146443",
-      index: 8,
+      index: 9,
       name: "customer-list",
       link: "https://cocky-fermi-ea251a.netlify.com/",
       url: "https://github.com/DanSimonson/customer-list",
@@ -147,7 +156,7 @@ const data = {
     },
     {
       _id: "593e9297a13e246da5ba0884",
-      index: 9,
+      index: 10,
       name: "Ghie-als",
       link: "https://jovial-bardeen-ffff02.netlify.app",
       url: "https://github.com/DanSimonson/ghie-als",
